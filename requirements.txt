@@ -1,0 +1,11 @@
+# WDRO-MOR reproducibility environment (Python 3.11, CPU-only)
+numpy>=1.26
+pandas>=2.0
+pyarrow>=14.0
+scipy>=1.11
+matplotlib>=3.8
+pymoo==0.6.*
+cvxpy>=1.4
+clarabel>=0.6
+scs>=3.2
+tqdm>=4.66

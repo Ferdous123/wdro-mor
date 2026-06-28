@@ -1,0 +1,124 @@
+{
+  "rows": [
+    {
+      "zone": "dhaka_urban_bd",
+      "N": 2784,
+      "wm_mean": 4.620712671468071,
+      "wm_std": 2.9774574301510666,
+      "wm_kurtosis": 0.6529933379647916,
+      "wm_skew": 1.0314543079669791,
+      "Mq_root": 6.985951292749558,
+      "fg_floor": 1.0502043576768048
+    },
+    {
+      "zone": "nyc_temperate_us",
+      "N": 2784,
+      "wm_mean": 6.270878227287452,
+      "wm_std": 3.7191968555407704,
+      "wm_kurtosis": 1.463848864396799,
+      "wm_skew": 1.0315575817799314,
+      "Mq_root": 9.14528516794101,
+      "fg_floor": 1.3748189663928436
+    },
+    {
+      "zone": "manaus_rainforest_br",
+      "N": 2784,
+      "wm_mean": 3.274160023035892,
+      "wm_std": 1.9064426327054629,
+      "wm_kurtosis": 1.2325210549649892,
+      "wm_skew": 1.056764643549163,
+      "Mq_root": 4.729858206440362,
+      "fg_floor": 0.7110438494972683
+    },
+    {
+      "zone": "in_salah_sahara_dz",
+      "N": 2784,
+      "wm_mean": 8.441824794239137,
+      "wm_std": 4.30784843478296,
+      "wm_kurtosis": -0.20422032508167431,
+      "wm_skew": 0.5193089734170085,
+      "Mq_root": 11.135894799479578,
+      "fg_floor": 1.6740691074072702
+    },
+    {
+      "zone": "la_paz_andes_bo",
+      "N": 2784,
+      "wm_mean": 1.669192557247026,
+      "wm_std": 1.0181324417532132,
+      "wm_kurtosis": 0.6478585179670993,
+      "wm_skew": 0.9319852325495522,
+      "Mq_root": 2.442275432515199,
+      "fg_floor": 0.36714946818144306
+    },
+    {
+      "zone": "tromso_arctic_no",
+      "N": 2784,
+      "wm_mean": 4.722441947961511,
+      "wm_std": 2.9129990356270303,
+      "wm_kurtosis": 1.6978567151170507,
+      "wm_skew": 1.2143822057731861,
+      "Mq_root": 7.097771031866169,
+      "fg_floor": 1.0670143198957551
+    }
+  ],
+  "bootstrap_epsstar": {
+    "dhaka_urban_bd": 1.0,
+    "nyc_temperate_us": 2.0,
+    "manaus_rainforest_br": 0.5,
+    "in_salah_sahara_dz": 1.0,
+    "la_paz_andes_bo": 1.0,
+    "tromso_arctic_no": 2.0
+  },
+  "d": 2,
+  "q": 4,
+  "mechanism": [
+    {
+      "zone": "dhaka_urban_bd",
+      "eps_star": 1.0,
+      "eps_cov": 1.0,
+      "binds": "coverage",
+      "lip": 9.769008874554288,
+      "p95_buffer": 5.5685674181092395
+    },
+    {
+      "zone": "nyc_temperate_us",
+      "eps_star": 2.0,
+      "eps_cov": 2.0,
+      "binds": "coverage",
+      "lip": 17.652211003939094,
+      "p95_buffer": 21.04491886854896
+    },
+    {
+      "zone": "manaus_rainforest_br",
+      "eps_star": 0.5,
+      "eps_cov": 0.5,
+      "binds": "coverage",
+      "lip": 7.051804432633968,
+      "p95_buffer": 3.2843310660308873
+    },
+    {
+      "zone": "in_salah_sahara_dz",
+      "eps_star": 1.0,
+      "eps_cov": 1.0,
+      "binds": "coverage",
+      "lip": 17.01607476212566,
+      "p95_buffer": 26.6713858770961
+    },
+    {
+      "zone": "la_paz_andes_bo",
+      "eps_star": 1.0,
+      "eps_cov": 1.0,
+      "binds": "coverage",
+      "lip": 11.668904314562164,
+      "p95_buffer": 7.217891638328354
+    },
+    {
+      "zone": "tromso_arctic_no",
+      "eps_star": 2.0,
+      "eps_cov": 2.0,
+      "binds": "coverage",
+      "lip": 12.984788066105883,
+      "p95_buffer": 16.34843742192345
+    }
+  ]
+}

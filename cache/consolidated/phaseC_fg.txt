@@ -1,0 +1,26 @@
+===== Phase C: Fournier-Guillin minimum-eps* floor + wind kurtosis =====
+W1 ball dimension d = 2 (wind u,v; rho fixed per scenario).
+Fournier-Guillin (2015, Thm 1, p.709): d=2 critical case p = d/2 = 1, rate N^-1/2 * log(1+N).
+Moment order q = 4 (M_q^(1/q) reported; the C(1,2,q) constant is non-explicit, so this is a floor scaling).
+
+zone                       N  wm_mean  wm_std  kurtosis    skew  Mq^1/q  fg_floor  eps*
+dhaka_urban_bd          2784    4.621   2.977     0.653   1.031   6.986    1.0502   1.0
+nyc_temperate_us        2784    6.271   3.719     1.464   1.032   9.145    1.3748   2.0
+manaus_rainforest_br    2784    3.274   1.906     1.233   1.057   4.730    0.7110   0.5
+in_salah_sahara_dz      2784    8.442   4.308    -0.204   0.519  11.136    1.6741   1.0
+la_paz_andes_bo         2784    1.669   1.018     0.648   0.932   2.442    0.3671   1.0
+tromso_arctic_no        2784    4.722   2.913     1.698   1.214   7.098    1.0670   2.0
+
+-- eps* vs wind kurtosis (OLS, 6 zones) --
+   slope = 0.4871   intercept = 0.8042   R^2 = 0.305   p = 0.256   Spearman rho = 0.555 (p = 0.252)
+
+-- what sets eps*: coverage vs the >=3-route front guard (MIN_FRONT = 3) --
+   zone                    eps*  eps_cov     binds  surf_Lip  P95_buf
+   dhaka_urban_bd           1.0     1.00  coverage      9.77     5.57
+   nyc_temperate_us         2.0     2.00  coverage     17.65    21.04
+   manaus_rainforest_br     0.5     0.50  coverage      7.05     3.28
+   in_salah_sahara_dz       1.0     1.00  coverage     17.02    26.67
+   la_paz_andes_bo          1.0     1.00  coverage     11.67     7.22
+   tromso_arctic_no         2.0     2.00  coverage     12.98    16.35
+
+   All six zones are coverage-bound; the >=3-route front guard binds none.

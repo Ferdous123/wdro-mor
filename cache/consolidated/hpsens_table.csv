@@ -1,0 +1,12 @@
+zone,algo,pop,gen,n,cov_val,cov_ood,hv_mean,hv_std
+nyc_temperate_us,nsga2,200,400,6,0.9976,0.9999,1.546e+05,0
+nyc_temperate_us,nsga3,120,200,6,0.9976,0.9997,1.535e+05,1.924
+nyc_temperate_us,nsga3,120,400,6,0.9976,0.9997,1.535e+05,0.9661
+nyc_temperate_us,nsga3,120,800,6,0.9976,0.9997,1.535e+05,0
+nyc_temperate_us,nsga3,200,200,6,0.9976,0.9997,1.535e+05,0
+nyc_temperate_us,nsga3,200,400,6,0.9976,0.9997,1.535e+05,1.924
+nyc_temperate_us,nsga3,200,800,6,0.9976,0.9997,1.535e+05,0
+nyc_temperate_us,nsga3,400,200,6,0.9976,0.9997,1.535e+05,0
+nyc_temperate_us,nsga3,400,400,6,0.9976,0.9997,1.535e+05,0
+nyc_temperate_us,nsga3,400,800,6,0.9976,0.9997,1.535e+05,0
+# STABILITY across 10 configs: cov_val mean=0.9976 CV=0.00% range=[0.998,0.998] | HV CV=0.21%

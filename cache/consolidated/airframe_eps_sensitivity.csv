@@ -1,0 +1,7 @@
+zone,eps_campaign,eps_anchor_2_6kg,eps_m300_6_3kg,eps_mc_mean,eps_mc_p5,eps_mc_p95,eps_mc_min,eps_mc_max
+dhaka_urban_bd,1.0,1.0,2.0,0.868,0.500,2.000,0.500,2.000
+nyc_temperate_us,2.0,2.0,2.0,1.695,1.000,2.000,1.000,3.000
+manaus_rainforest_br,0.5,0.5,2.0,0.630,0.500,1.000,0.500,2.000
+in_salah_sahara_dz,1.0,1.0,2.0,1.315,1.000,2.000,1.000,2.000
+la_paz_andes_bo,1.0,1.0,1.0,0.960,0.500,1.000,0.500,1.000
+tromso_arctic_no,2.0,2.0,2.0,2.080,1.000,3.000,1.000,5.000

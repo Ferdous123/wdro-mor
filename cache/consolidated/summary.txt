@@ -1,0 +1,170 @@
+===== WDRO-MOR v3 CAMPAIGN CONSOLIDATION =====
+checkpoints present: 1302 / 1302 (6 zones x 7 methods x 31 seeds)
+epsstar files: 6 / 6
+
+-- eps* per zone --
+  zone,eps_star,cov_at_epsstar,cov_curve
+  dhaka_urban_bd,1.0,0.9790292744252872,0.1:0.753 0.2:0.822 0.5:0.940 1.0:0.979 2.0:0.989 3.0:0.999 5.0:1.000
+  nyc_temperate_us,2.0,0.9879912003745843,0.1:0.719 0.2:0.753 0.5:0.846 1.0:0.926 2.0:0.988 3.0:0.999 5.0:1.000
+  manaus_rainforest_br,0.5,0.9635147270114943,0.1:0.786 0.2:0.879 0.5:0.964 1.0:0.994 2.0:1.000 3.0:1.000 5.0:1.000
+  in_salah_sahara_dz,1.0,0.9570153855363985,0.1:0.724 0.2:0.773 0.5:0.882 1.0:0.957 2.0:0.992 3.0:0.998 5.0:1.000
+  la_paz_andes_bo,1.0,0.9753390063600191,0.1:0.674 0.2:0.753 0.5:0.883 1.0:0.975 2.0:1.000 3.0:1.000 5.0:1.000
+  tromso_arctic_no,2.0,0.9716085967432949,0.1:0.707 0.2:0.773 0.5:0.854 1.0:0.913 2.0:0.972 3.0:0.987 5.0:1.000
+
+-- WDRO vs baseline coverage (val=in-dist, ood=test-2025) --
+  zone,method,n_seeds,cov_val_mean,cov_val_std,cov_ood_mean,cov_ood_std
+  dhaka_urban_bd,wdro,31,0.9792,0.0000,0.9884,0.0000
+  dhaka_urban_bd,saa_cvar,31,0.9944,0.0000,1.0000,0.0000
+  dhaka_urban_bd,saa_cvar_tuned,31,0.9637,0.0000,0.9619,0.0001
+  dhaka_urban_bd,robust_box,31,0.8078,0.0000,0.7720,0.0001
+  dhaka_urban_bd,kl_drcc,31,0.7261,0.0003,0.6509,0.0001
+  dhaka_urban_bd,ws,31,0.6434,0.0001,0.5520,0.0000
+  dhaka_urban_bd,rs,31,0.6434,0.0001,0.5520,0.0000
+  nyc_temperate_us,wdro,31,0.9976,0.0000,0.9997,0.0000
+  nyc_temperate_us,saa_cvar,31,0.9711,0.0001,0.9808,0.0000
+  nyc_temperate_us,saa_cvar_tuned,31,0.9711,0.0001,0.9808,0.0000
+  nyc_temperate_us,robust_box,31,0.8056,0.0001,0.8265,0.0001
+  nyc_temperate_us,kl_drcc,31,0.7299,0.0000,0.7238,0.0000
+  nyc_temperate_us,ws,31,0.6729,0.0000,0.6125,0.0000
+  nyc_temperate_us,rs,31,0.6729,0.0000,0.6125,0.0000
+  manaus_rainforest_br,wdro,31,0.9638,0.0000,0.9742,0.0000
+  manaus_rainforest_br,saa_cvar,31,1.0000,0.0000,1.0000,0.0000
+  manaus_rainforest_br,saa_cvar_tuned,31,0.9890,0.0000,0.9979,0.0000
+  manaus_rainforest_br,robust_box,31,0.7088,0.0000,0.7435,0.0000
+  manaus_rainforest_br,kl_drcc,31,0.7244,0.0000,0.7578,0.0000
+  manaus_rainforest_br,ws,31,0.6125,0.0000,0.6672,0.0000
+  manaus_rainforest_br,rs,31,0.6125,0.0000,0.6672,0.0000
+  in_salah_sahara_dz,wdro,31,0.9573,0.0004,0.9297,0.0007
+  in_salah_sahara_dz,saa_cvar,31,0.9899,0.0002,0.9824,0.0003
+  in_salah_sahara_dz,saa_cvar_tuned,31,0.9899,0.0002,0.9824,0.0003
+  in_salah_sahara_dz,robust_box,31,0.9172,0.0007,0.8568,0.0007
+  in_salah_sahara_dz,kl_drcc,31,0.7612,0.0004,0.6618,0.0002
+  in_salah_sahara_dz,ws,31,0.6669,0.0003,0.5817,0.0005
+  in_salah_sahara_dz,rs,31,0.6669,0.0003,0.5817,0.0005
+  la_paz_andes_bo,wdro,31,0.9826,0.0000,0.9536,0.0000
+  la_paz_andes_bo,saa_cvar,31,1.0000,0.0000,1.0000,0.0000
+  la_paz_andes_bo,saa_cvar_tuned,31,0.9768,0.0000,0.9441,0.0000
+  la_paz_andes_bo,robust_box,31,0.8559,0.0000,0.8121,0.0000
+  la_paz_andes_bo,kl_drcc,31,0.7041,0.0001,0.6418,0.0000
+  la_paz_andes_bo,ws,31,0.5827,0.0001,0.5372,0.0001
+  la_paz_andes_bo,rs,31,0.5827,0.0001,0.5372,0.0001
+  tromso_arctic_no,wdro,31,0.9724,0.0000,0.9622,0.0000
+  tromso_arctic_no,saa_cvar,31,0.9798,0.0001,0.9740,0.0001
+  tromso_arctic_no,saa_cvar_tuned,31,0.9798,0.0001,0.9740,0.0001
+  tromso_arctic_no,robust_box,31,0.7726,0.0001,0.7203,0.0000
+  tromso_arctic_no,kl_drcc,31,0.7566,0.0002,0.7063,0.0000
+  tromso_arctic_no,ws,31,0.6344,0.0000,0.6042,0.0001
+  tromso_arctic_no,rs,31,0.6344,0.0000,0.6042,0.0001
+
+-- true-cost hypervolume (F_real; higher=better) --
+  zone,method,n_seeds,hv_mean,hv_std,refpt
+  dhaka_urban_bd,wdro,31,1.661e+05,0,[311.3 0.712 54151]
+  dhaka_urban_bd,saa_cvar,31,1.661e+05,0,[311.3 0.712 54151]
+  dhaka_urban_bd,saa_cvar_tuned,31,1.661e+05,0,[311.3 0.712 54151]
+  dhaka_urban_bd,robust_box,31,1.661e+05,0,[311.3 0.712 54151]
+  dhaka_urban_bd,kl_drcc,31,1.661e+05,0,[311.3 0.712 54151]
+  dhaka_urban_bd,ws,31,1.661e+05,0,[311.3 0.712 54151]
+  dhaka_urban_bd,rs,31,1.661e+05,0,[311.3 0.712 54151]
+  nyc_temperate_us,wdro,31,6.162e+05,4.642,[482.2 0.089 81550]
+  nyc_temperate_us,saa_cvar,31,6.255e+05,2.328e-10,[482.2 0.089 81550]
+  nyc_temperate_us,saa_cvar_tuned,31,6.255e+05,2.328e-10,[482.2 0.089 81550]
+  nyc_temperate_us,robust_box,31,6.301e+05,2.328e-10,[482.2 0.089 81550]
+  nyc_temperate_us,kl_drcc,31,6.316e+05,2.328e-10,[482.2 0.089 81550]
+  nyc_temperate_us,ws,31,6.302e+05,2.328e-10,[482.2 0.089 81550]
+  nyc_temperate_us,rs,31,6.302e+05,2.328e-10,[482.2 0.089 81550]
+  manaus_rainforest_br,wdro,31,2.16e+05,0,[447.2 0.090 78524]
+  manaus_rainforest_br,saa_cvar,31,2.081e+05,5.821e-11,[447.2 0.090 78524]
+  manaus_rainforest_br,saa_cvar_tuned,31,2.16e+05,0,[447.2 0.090 78524]
+  manaus_rainforest_br,robust_box,31,2.16e+05,0,[447.2 0.090 78524]
+  manaus_rainforest_br,kl_drcc,31,2.16e+05,0,[447.2 0.090 78524]
+  manaus_rainforest_br,ws,31,2.16e+05,0,[447.2 0.090 78524]
+  manaus_rainforest_br,rs,31,2.16e+05,0,[447.2 0.090 78524]
+  in_salah_sahara_dz,wdro,31,1.121e+04,1.819e-12,[232.6 0.077 36842]
+  in_salah_sahara_dz,saa_cvar,31,1.121e+04,1.819e-12,[232.6 0.077 36842]
+  in_salah_sahara_dz,saa_cvar_tuned,31,1.121e+04,1.819e-12,[232.6 0.077 36842]
+  in_salah_sahara_dz,robust_box,31,1.121e+04,1.819e-12,[232.6 0.077 36842]
+  in_salah_sahara_dz,kl_drcc,31,1.121e+04,1.819e-12,[232.6 0.077 36842]
+  in_salah_sahara_dz,ws,31,1.121e+04,1.819e-12,[232.6 0.077 36842]
+  in_salah_sahara_dz,rs,31,1.121e+04,1.819e-12,[232.6 0.077 36842]
+  la_paz_andes_bo,wdro,31,1.444e+05,2.91e-11,[346.5 0.234 54087]
+  la_paz_andes_bo,saa_cvar,31,1.444e+05,2.91e-11,[346.5 0.234 54087]
+  la_paz_andes_bo,saa_cvar_tuned,31,1.444e+05,2.91e-11,[346.5 0.234 54087]
+  la_paz_andes_bo,robust_box,31,1.444e+05,2.91e-11,[346.5 0.234 54087]
+  la_paz_andes_bo,kl_drcc,31,1.444e+05,2.91e-11,[346.5 0.234 54087]
+  la_paz_andes_bo,ws,31,1.444e+05,2.91e-11,[346.5 0.234 54087]
+  la_paz_andes_bo,rs,31,1.444e+05,2.91e-11,[346.5 0.234 54087]
+  tromso_arctic_no,wdro,31,9.585e+05,3.492e-10,[410.7 0.323 71625]
+  tromso_arctic_no,saa_cvar,31,9.585e+05,3.492e-10,[410.7 0.323 71625]
+  tromso_arctic_no,saa_cvar_tuned,31,9.585e+05,3.492e-10,[410.7 0.323 71625]
+  tromso_arctic_no,robust_box,31,9.548e+05,2.328e-10,[410.7 0.323 71625]
+  tromso_arctic_no,kl_drcc,31,9.548e+05,2.328e-10,[410.7 0.323 71625]
+  tromso_arctic_no,ws,31,9.548e+05,2.328e-10,[410.7 0.323 71625]
+  tromso_arctic_no,rs,31,9.548e+05,2.328e-10,[410.7 0.323 71625]
+
+-- coverage Wilson 95% lower bounds (pooled route x scenario) --
+  zone,method,n_seeds,trials_val,phat_val,wilson_lb_val,trials_ood,phat_ood,wilson_lb_ood
+  dhaka_urban_bd,wdro,31,389760,0.9792,0.9788,389760,0.9884,0.9881
+  dhaka_urban_bd,saa_cvar,31,392544,0.9944,0.9942,392544,1.0000,1.0000
+  dhaka_urban_bd,saa_cvar_tuned,31,400896,0.9637,0.9631,400896,0.9619,0.9613
+  dhaka_urban_bd,robust_box,31,414816,0.8078,0.8066,414816,0.7720,0.7707
+  dhaka_urban_bd,kl_drcc,31,409248,0.7261,0.7247,409248,0.6509,0.6494
+  dhaka_urban_bd,ws,31,406464,0.6434,0.6419,406464,0.5520,0.5505
+  dhaka_urban_bd,rs,31,406464,0.6434,0.6419,406464,0.5520,0.5505
+  nyc_temperate_us,wdro,31,1645344,0.9976,0.9975,1645344,0.9997,0.9997
+  nyc_temperate_us,saa_cvar,31,1689888,0.9711,0.9709,1689888,0.9808,0.9806
+  nyc_temperate_us,saa_cvar_tuned,31,1689888,0.9711,0.9709,1689888,0.9808,0.9806
+  nyc_temperate_us,robust_box,31,1915392,0.8056,0.8050,1915392,0.8265,0.8260
+  nyc_temperate_us,kl_drcc,31,1856928,0.7299,0.7292,1856928,0.7238,0.7232
+  nyc_temperate_us,ws,31,1720512,0.6729,0.6722,1720512,0.6125,0.6117
+  nyc_temperate_us,rs,31,1720512,0.6729,0.6722,1720512,0.6125,0.6117
+  manaus_rainforest_br,wdro,31,517824,0.9638,0.9633,517824,0.9742,0.9738
+  manaus_rainforest_br,saa_cvar,31,322944,1.0000,1.0000,322944,1.0000,1.0000
+  manaus_rainforest_br,saa_cvar_tuned,31,517824,0.9890,0.9887,517824,0.9979,0.9978
+  manaus_rainforest_br,robust_box,31,517824,0.7088,0.7076,517824,0.7435,0.7423
+  manaus_rainforest_br,kl_drcc,31,517824,0.7244,0.7232,517824,0.7578,0.7566
+  manaus_rainforest_br,ws,31,517824,0.6125,0.6112,517824,0.6672,0.6659
+  manaus_rainforest_br,rs,31,517824,0.6125,0.6112,517824,0.6672,0.6659
+  in_salah_sahara_dz,wdro,31,373056,0.9573,0.9566,373056,0.9297,0.9289
+  in_salah_sahara_dz,saa_cvar,31,370272,0.9899,0.9895,370272,0.9824,0.9819
+  in_salah_sahara_dz,saa_cvar_tuned,31,370272,0.9899,0.9895,370272,0.9824,0.9819
+  in_salah_sahara_dz,robust_box,31,361920,0.9172,0.9163,361920,0.8569,0.8557
+  in_salah_sahara_dz,kl_drcc,31,370272,0.7611,0.7598,370272,0.6618,0.6603
+  in_salah_sahara_dz,ws,31,367488,0.6669,0.6654,367488,0.5816,0.5800
+  in_salah_sahara_dz,rs,31,367488,0.6669,0.6654,367488,0.5816,0.5800
+  la_paz_andes_bo,wdro,31,1049568,0.9826,0.9823,1049568,0.9536,0.9532
+  la_paz_andes_bo,saa_cvar,31,1052352,1.0000,1.0000,1052352,1.0000,1.0000
+  la_paz_andes_bo,saa_cvar_tuned,31,1071840,0.9768,0.9765,1071840,0.9441,0.9437
+  la_paz_andes_bo,robust_box,31,1071840,0.8559,0.8552,1071840,0.8121,0.8114
+  la_paz_andes_bo,kl_drcc,31,1074624,0.7041,0.7032,1074624,0.6418,0.6409
+  la_paz_andes_bo,ws,31,1071840,0.5827,0.5818,1071840,0.5372,0.5362
+  la_paz_andes_bo,rs,31,1071840,0.5827,0.5818,1071840,0.5372,0.5362
+  tromso_arctic_no,wdro,31,581856,0.9724,0.9720,581856,0.9622,0.9617
+  tromso_arctic_no,saa_cvar,31,579072,0.9798,0.9794,579072,0.9740,0.9736
+  tromso_arctic_no,saa_cvar_tuned,31,579072,0.9798,0.9794,579072,0.9740,0.9736
+  tromso_arctic_no,robust_box,31,573504,0.7726,0.7715,573504,0.7203,0.7192
+  tromso_arctic_no,kl_drcc,31,570720,0.7566,0.7555,570720,0.7063,0.7051
+  tromso_arctic_no,ws,31,584640,0.6344,0.6331,584640,0.6042,0.6029
+  tromso_arctic_no,rs,31,584640,0.6344,0.6331,584640,0.6042,0.6029
+
+-- across-zone paired WDRO vs baseline (n=6, low power; descriptive) --
+  baseline,metric,n_zones,median_diff_wdro_minus_base,wins_wdro,wilcoxon_p,paired_t_p,NOTE
+  saa_cvar,val,6,-0.01629,1/6,0.219,0.196,n=6 low-power (report descriptively)
+  saa_cvar,ood,6,-0.01879,1/6,0.156,0.1,n=6 low-power (report descriptively)
+  saa_cvar,hv,6,0,1/6,0.655,0.921,n=6 low-power (report descriptively)
+  saa_cvar_tuned,val,6,-0.0008134,3/6,0.844,0.772,n=6 low-power (report descriptively)
+  saa_cvar_tuned,ood,6,-0.001149,3/6,0.844,0.668,n=6 low-power (report descriptively)
+  saa_cvar_tuned,hv,6,0,0/6,0.317,0.363,n=6 low-power (report descriptively)
+  robust_box,val,6,0.1817,6/6,0.0312,0.0028,n=6 low-power (report descriptively)
+  robust_box,ood,6,0.1948,6/6,0.0312,0.00103,n=6 low-power (report descriptively)
+  robust_box,hv,6,0,1/6,0.655,0.53,n=6 low-power (report descriptively)
+  kl_drcc,val,6,0.2463,6/6,0.0312,7.67e-06,n=6 low-power (report descriptively)
+  kl_drcc,ood,6,0.2719,6/6,0.0312,1.76e-05,n=6 low-power (report descriptively)
+  kl_drcc,hv,6,0,1/6,0.655,0.512,n=6 low-power (report descriptively)
+  ws,val,6,0.3369,6/6,0.0312,2.75e-06,n=6 low-power (report descriptively)
+  ws,ood,6,0.3726,6/6,0.0312,6.77e-06,n=6 low-power (report descriptively)
+  ws,hv,6,0,1/6,0.655,0.529,n=6 low-power (report descriptively)
+  rs,val,6,0.3369,6/6,0.0312,2.75e-06,n=6 low-power (report descriptively)
+  rs,ood,6,0.3726,6/6,0.0312,6.77e-06,n=6 low-power (report descriptively)
+  rs,hv,6,0,1/6,0.655,0.529,n=6 low-power (report descriptively)
+
+-- exemplars extracted for zones: ['dhaka_urban_bd', 'nyc_temperate_us', 'manaus_rainforest_br', 'in_salah_sahara_dz', 'la_paz_andes_bo', 'tromso_arctic_no'] --
